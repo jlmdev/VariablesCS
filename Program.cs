@@ -16,10 +16,10 @@ namespace VariablesCS
             Console.WriteLine($"numberOfCupsOfCoffee: {numberOfCupsOfCoffee} fullName: {fullName} today: {today}");
 
             // Get Input from User
-            var specialUser = "Alice";
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
-            if (Equals(specialUser, userName))
+
+            if (userName == "Alice")
             {
                 Console.WriteLine("Hi, Alice! Welcome Back!");
             }
