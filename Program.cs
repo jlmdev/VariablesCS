@@ -9,15 +9,24 @@ namespace VariablesCS
             // Declare Variables
             var numberOfCupsOfCoffee = 3;
             var fullName = "Josh Mann";
-            var today = "08/11/2020";
+            // Using DateTime to represent current date as string
+            var today = DateTime.Now.ToString("dd/MM/yyyy");
 
             // Output to Terminal
             Console.WriteLine($"numberOfCupsOfCoffee: {numberOfCupsOfCoffee} fullName: {fullName} today: {today}");
 
             // Get Input from User
+            var specialUser = "Alice";
             Console.Write("What is your name? ");
             var userName = Console.ReadLine();
-            Console.WriteLine($"Hello, {userName}.");
+            if (Equals(specialUser, userName))
+            {
+                Console.WriteLine("Hi, Alice! Welcome Back!");
+            }
+            else
+            {
+                Console.WriteLine($"Hello, {userName}.");
+            }
 
             // Getting different types of input from the user
             Console.WriteLine("Please enter 2 numbers.");
