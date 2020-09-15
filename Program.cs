@@ -4,7 +4,7 @@ namespace VariablesCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void variablesMethod()
         {
             // Declare Variables
             var numberOfCupsOfCoffee = 3;
@@ -59,6 +59,10 @@ namespace VariablesCS
             var remainder = firstOperand % secondOperand;
             Console.WriteLine($"remainder = {remainder}");
             // display
+        }
+        static void Main(string[] args)
+        {
+            variablesMethod();
         }
     }
 }
